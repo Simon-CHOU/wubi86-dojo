@@ -9,6 +9,7 @@ import Button from '../components/ui/Button';
 import Select from '../components/ui/Select';
 import TypingArea from '../components/TypingArea';
 import ResultsModal from '../components/ResultsModal';
+import OnboardingGuide from '../components/OnboardingGuide';
 import {
   RotateCcw,
   Keyboard,
@@ -118,6 +119,8 @@ const PracticePage: React.FC = () => {
 
   return (
     <div className="space-y-6">
+      <OnboardingGuide />
+
       {/* aria-live region for screen readers */}
       <div aria-live="polite" aria-atomic="true" className="sr-only">
         {statusAnnouncement}

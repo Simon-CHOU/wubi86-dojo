@@ -4,7 +4,6 @@ import { Keyboard, BarChart2, Settings, Activity, Menu, X } from 'lucide-react';
 import clsx from 'clsx';
 import ThemeToggle from './ui/ThemeToggle';
 import ErrorBoundary from './ErrorBoundary';
-import OnboardingGuide from './OnboardingGuide';
 
 const Layout: React.FC = () => {
   const location = useLocation();
@@ -32,8 +31,6 @@ const Layout: React.FC = () => {
       >
         跳转到主要内容
       </a>
-
-      <OnboardingGuide />
 
       <header className="bg-white dark:bg-gray-900 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
